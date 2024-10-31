@@ -26,8 +26,22 @@ body {
 .payment-box {
     background: #fff;
     border-radius: 10px;
-    width: 1200px;
-    padding: 120px;
     text-align: center;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+    position: relative;
 }
