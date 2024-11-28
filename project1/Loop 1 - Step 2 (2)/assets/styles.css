@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.payment-box {
+    background: #fff;
+    border-radius: 10px;
+    width: 1200px;
+    padding: 120px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.payment-box h2 {
+    font-size: 75px; 
+    margin-bottom: 50px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 42px;
+    position: relative;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.option img {
+    width: 110px;
+    margin-right: 30px;
+}
+
+.option  span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.option.selected::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    width: 60px; 
+    height: 60px; 
+    background-image: url('./img/check.svg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+
+.next-step {
+    margin-top: 50px;
+    padding: 40px;
+    width: 100%;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 36px; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.next-step:hover {
+    background-color: #475ddb;
+}
+
+.arrow-icon {
+    width: 50px;
+}
+
+.next-step:active {
+    background-color: #4b72f5;
+    transform: translateY(4px);
+  }
