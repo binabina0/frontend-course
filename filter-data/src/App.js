@@ -1,10 +1,14 @@
 import React from 'react';
+import Filter from './components/Filter';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="wrapper">
+        <Filter />
+      </div>
+    );
+ }
 }
 
 export default App;
