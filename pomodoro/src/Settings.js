@@ -30,7 +30,6 @@ function Settings() {
             <div style={{textAlign:'center', marginTop:'20px'}}> 
                 <BackButton/>
             </div>
-            
         </div>
     );
 }
